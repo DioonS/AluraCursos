@@ -8,6 +8,7 @@ import javax.persistence.EntityManager;
 import br.com.alura.loja.dao.CategoriaDao;
 import br.com.alura.loja.dao.ProdutoDao;
 import br.com.alura.loja.model.Categoria;
+import br.com.alura.loja.model.CategoriaId;
 import br.com.alura.loja.model.Produto;
 import br.com.alura.loja.util.JPAUtil;
 
@@ -42,6 +43,9 @@ public class CadastroDeProduto {
         produtoDao.cadastrar(celular);
 
         em.getTransaction().commit();
+
+        em.find(Categoria.class, new CategoriaId("CELULARES", "pessoas"));
+
         em.close();
     }
 
