@@ -20,8 +20,9 @@ public class ListaEmpresasServlet extends HttpServlet{
         List<Empresa> lista = banco.getEmpresas();
         PrintWriter out = resp.getWriter();
 
+        req.setAttribute("empresas", lista);
+
         RequestDispatcher rd = req.getRequestDispatcher("/listarEmpresas.jsp");
-        //req.setAttribute("lista", lista);
         rd.forward(req, resp);
     }
 }
