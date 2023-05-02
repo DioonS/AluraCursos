@@ -12,6 +12,7 @@
     <list default="true" id="5114f2fb-a1e8-466b-9cc3-868ec3b0c6d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/NovaEmpresaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/NovaEmpresaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/novaEmpresaCriada.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/novaEmpresaCriada.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682969877570</updated>
-      <workItem from="1682969878566" duration="8181000" />
+      <workItem from="1682969878566" duration="9007000" />
     </task>
     <servers />
   </component>

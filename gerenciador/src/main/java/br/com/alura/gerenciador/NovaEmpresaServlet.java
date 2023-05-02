@@ -4,18 +4,14 @@ import java.io.*;
 
 import br.com.alura.gerenciador.servlet.Banco;
 import br.com.alura.gerenciador.servlet.Empresa;
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 @WebServlet(name = "novaEmpresa", value = "/novaEmpresa")
 public class NovaEmpresaServlet extends HttpServlet {
-    /*private String message;
-
-    public void init() {
-        message = "Hello World!";
-    }*/
-
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         //response.setContentType("text/html");
 
         System.out.println("Cadastrando nova empresa");
@@ -28,8 +24,10 @@ public class NovaEmpresaServlet extends HttpServlet {
         banco.adiciona(empresa);
 
         PrintWriter out = response.getWriter();
-    }
 
-/*    public void destroy() {
-    }*/
+        // Chamar o JSP para apresentar o HTML
+        RequestDispatcher rd = request.getRequestDispatcher("/novaEmpresaCriada.jsp");
+        request.setAttribute("empresa", empresa.getNome());
+        rd.forward(request, response);
+    }
 }
