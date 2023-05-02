@@ -11,8 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5114f2fb-a1e8-466b-9cc3-868ec3b0c6d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/ListaEmpresasServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/ListaEmpresasServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/NovaEmpresaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/NovaEmpresaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formNovaEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formNovaEmpresa.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/listarEmpresas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listarEmpresas.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/novaEmpresaCriada.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/novaEmpresaCriada.jsp" afterDir="false" />
     </list>
@@ -43,6 +44,14 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2PCnL0Cnfj5gniw1IGQxbBvOX1S" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -56,7 +65,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/diego.dionisio/AluraCursos/gerenciador/src/main/webapp/WEB-INF/lib",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/itzdi/AluraCursos/gerenciador",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -172,6 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682969877570</updated>
       <workItem from="1682969878566" duration="13235000" />
+      <workItem from="1683029531777" duration="2070000" />
     </task>
     <servers />
   </component>
