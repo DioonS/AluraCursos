@@ -7,6 +7,11 @@
 </head>
 <body>
 
+    <c:if test="${ not empty empresa }">
+        <!-- Usando Expression Language -->
+        <p>Empresa  ${ empresa } cadastrada com Sucesso !</p>
+    </c:if>
+
     <p>Lista de Empresas: </p>
     <ul>
         <c:forEach items="${ empresas }" var="empresa">

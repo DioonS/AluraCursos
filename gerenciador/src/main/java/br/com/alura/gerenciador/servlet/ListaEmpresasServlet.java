@@ -15,10 +15,12 @@ import java.util.List;
 public class ListaEmpresasServlet extends HttpServlet{
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+
         Banco banco = new Banco();
         List<Empresa> lista = banco.getEmpresas();
-        PrintWriter out = resp.getWriter();
+
+        //PrintWriter out = resp.getWriter();
 
         req.setAttribute("empresas", lista);
 
