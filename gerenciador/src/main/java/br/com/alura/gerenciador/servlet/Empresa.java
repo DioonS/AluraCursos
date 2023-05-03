@@ -11,6 +11,10 @@ public class Empresa {
         this.id = id;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
     public Date getDataAbertura() {
         return dataAbertura;
     }

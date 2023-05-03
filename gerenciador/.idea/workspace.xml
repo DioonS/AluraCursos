@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5114f2fb-a1e8-466b-9cc3-868ec3b0c6d1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/NovaEmpresaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/NovaEmpresaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/ListaEmpresasServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/ListaEmpresasServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/listarEmpresas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listarEmpresas.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="5114f2fb-a1e8-466b-9cc3-868ec3b0c6d1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,6 +40,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -62,12 +58,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/diego.dionisio/AluraCursos/gerenciador",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/itzdi/AluraCursos/gerenciador/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -76,6 +72,7 @@
       <recent name="br.com.alura.gerenciador" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\itzdi\AluraCursos\gerenciador\src\main\webapp" />
       <recent name="C:\Users\diego.dionisio\AluraCursos\gerenciador\src\main\webapp\WEB-INF\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -178,7 +175,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682969877570</updated>
-      <workItem from="1682969878566" duration="18758000" />
+      <workItem from="1682969878566" duration="13235000" />
+      <workItem from="1683029531777" duration="2361000" />
+      <workItem from="1683077041112" duration="4769000" />
     </task>
     <servers />
   </component>

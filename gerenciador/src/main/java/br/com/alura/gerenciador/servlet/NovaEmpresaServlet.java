@@ -1,4 +1,4 @@
-package br.com.alura.gerenciador;
+package br.com.alura.gerenciador.servlet;
 
 import java.io.*;
 import java.text.ParseException;
