@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebServlet(name = "hello", value = "/hello")
-public class HelloWorld extends HttpServlet{
+public class FirstPage extends HttpServlet{
 
     @Override
     public void service(ServletRequest req, ServletResponse res) throws IOException {

@@ -1,24 +1,17 @@
-package br.com.alura.gerenciador.servlet;
+package br.com.alura.gerenciador.acoes;
 
-import br.com.alura.gerenciador.acoes.MostrarEmpresa;
 import br.com.alura.gerenciador.model.Banco;
 import br.com.alura.gerenciador.model.Empresa;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(name = "mostrarEmpresa", value = "/mostrarEmpresa")
-public class MostrarEmpresaServlet extends HttpServlet {
-
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        MostrarEmpresa acao = new MostrarEmpresa();
-
+// Encapsulando o código de listar as empresas
+public class MostrarEmpresa {
+    public void executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String paramId = req.getParameter("id");
         // Parsing
         Integer id = Integer.valueOf(paramId);
@@ -31,6 +24,5 @@ public class MostrarEmpresaServlet extends HttpServlet {
         req.setAttribute("empresa", empresa);
         RequestDispatcher rd = req.getRequestDispatcher("formAlteraEmpresa.jsp");
         rd.forward(req, resp);
-
     }
 }

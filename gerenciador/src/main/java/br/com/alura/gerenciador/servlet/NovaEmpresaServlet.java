@@ -5,9 +5,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import br.com.alura.gerenciador.servlet.Banco;
-import br.com.alura.gerenciador.servlet.Empresa;
-import jakarta.servlet.RequestDispatcher;
+import br.com.alura.gerenciador.model.Banco;
+import br.com.alura.gerenciador.model.Empresa;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;

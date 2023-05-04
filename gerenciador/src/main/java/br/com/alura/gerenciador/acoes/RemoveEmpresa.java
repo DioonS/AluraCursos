@@ -1,19 +1,15 @@
-package br.com.alura.gerenciador.servlet;
+package br.com.alura.gerenciador.acoes;
 
 import br.com.alura.gerenciador.model.Banco;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(name = "removeEmpresa", value = "/removeEmpresa")
-public class RemoveEmpresaServlet extends HttpServlet {
-
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+// Encapsulando o código de listar as empresas
+public class RemoveEmpresa {
+    public void executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String paramId = req.getParameter("id");
         Integer id = Integer.valueOf(paramId);
         System.out.println(id);
