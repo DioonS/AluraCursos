@@ -13,6 +13,8 @@ import java.util.List;
 // Encapsulando o código de listar as empresas
 public class ListarEmpresas {
     public void executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("Listar empresas");
+
         Banco banco = new Banco();
         List<Empresa> lista = banco.getEmpresas();
 

@@ -12,6 +12,8 @@ import java.io.IOException;
 // Encapsulando o código de listar as empresas
 public class MostrarEmpresa {
     public void executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("Mostrar Empresa");
+
         String paramId = req.getParameter("id");
         // Parsing
         Integer id = Integer.valueOf(paramId);

@@ -7,6 +7,6 @@
 <body>
 <h1><%= "Hello World!" %></h1>
 <br/>
-<a href="/gerenciador/listaEmpresas">Empresas Cadastradas</a>
+<a href="/gerenciador/entrada?acao=ListarEmpresas">Empresas Cadastradas</a>
 </body>
 </html>

@@ -1,10 +1,8 @@
-package br.com.alura.gerenciador.servlet;
+package br.com.alura.gerenciador.acoes;
 
 import br.com.alura.gerenciador.model.Banco;
 import br.com.alura.gerenciador.model.Empresa;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
@@ -13,17 +11,13 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@WebServlet(name = "alterarEmpresa", value = "/alterarEmpresa")
-public class AlterarEmpresaServlet extends HttpServlet {
-
-    @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("Alterar Empresa");
+// Encapsulando o código de listar as empresas
+public class NovaEmpresa {
+    public void executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("Cadastrando nova empresa");
 
         String nomeEmpresa = req.getParameter("nome");
         String dataEmpresa = req.getParameter("data");
-        String paramIdEmpresa = req.getParameter("id");
-        Integer id = Integer.valueOf(paramIdEmpresa);
 
         Date dataAbertura = null;
         try {
@@ -33,14 +27,15 @@ public class AlterarEmpresaServlet extends HttpServlet {
             throw new ServletException(e);
         }
 
-        System.out.println(id);
-
-        Banco banco = new Banco();
-        Empresa empresa = banco.buscarEmpresaPorId(id);
-
+        Empresa empresa = new Empresa();
         empresa.setNome(nomeEmpresa);
         empresa.setDataAbertura(dataAbertura);
 
-        resp.sendRedirect("listaEmpresas");
+        Banco banco = new Banco();
+        banco.adiciona(empresa);
+
+        req.setAttribute("empresa", empresa.getNome());
+
+        resp.sendRedirect("entrada?acao=ListarEmpresas");
     }
 }

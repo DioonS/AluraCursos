@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<c:url value="/novaEmpresa" var="linkServletNovaEmpresa"/>
+<c:url value="/entrada" var="linkEntradaServlet"/>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,10 +8,11 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="${ linkServletNovaEmpresa }" method="post">
+    <form action="${ linkEntradaServlet }" method="post">
 
         <p>Nome:</p><input type="text" name="nome"/>
         <p>Data Abertura:</p><input type="text" name="data"/>
+        <input type="hidden" name="acao" value="NovaEmpresa">
 
         <input type="submit"/>
     </form>

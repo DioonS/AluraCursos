@@ -1,8 +1,6 @@
 package br.com.alura.gerenciador.servlet;
 
-import br.com.alura.gerenciador.acoes.ListarEmpresas;
-import br.com.alura.gerenciador.acoes.MostrarEmpresa;
-import br.com.alura.gerenciador.acoes.RemoveEmpresa;
+import br.com.alura.gerenciador.acoes.*;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -19,20 +17,26 @@ public class UnicaEntradaServlet extends HttpServlet {
         String paramAcao = req.getParameter("acao");
 
         if (paramAcao.equals("ListarEmpresas")) {
-            System.out.println("Listando Empresas");
 
             ListarEmpresas acao = new ListarEmpresas();
             acao.executa(req, resp);
 
         } else if (paramAcao.equals("RemoverEmpresa")) {
-            System.out.println("Removendo Empresa");
 
             RemoveEmpresa acao = new RemoveEmpresa();
             acao.executa(req, resp);
 
-        } else if (paramAcao.equals("MostrarEmpresas")) {
+        } else if (paramAcao.equals("MostrarEmpresa")) {
 
             MostrarEmpresa acao = new MostrarEmpresa();
+            acao.executa(req, resp);
+        } else if (paramAcao.equals("AlterarEmpresa")) {
+
+            AlterarEmpresa acao = new AlterarEmpresa();
+            acao.executa(req, resp);
+        } else if (paramAcao.equals("NovaEmpresa")) {
+
+            NovaEmpresa acao = new NovaEmpresa();
             acao.executa(req, resp);
         }
     }
