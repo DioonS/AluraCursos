@@ -1,6 +1,6 @@
 package br.com.alura.gerenciador.servlet;
 
-import br.com.alura.gerenciador.acoes.*;
+import br.com.alura.gerenciador.controller.*;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -18,7 +18,7 @@ public class UnicaEntradaServlet extends HttpServlet {
 
         String paramAcao = req.getParameter("acao");
 
-        String nomeDaClasse = "br.com.alura.gerenciador.acoes." + paramAcao;
+        String nomeDaClasse = "br.com.alura.gerenciador.controller." + paramAcao;
 
         String nome;
         // Carrega a classe com o nome requisitado
@@ -37,7 +37,7 @@ public class UnicaEntradaServlet extends HttpServlet {
             rd.forward(req, resp);
         } else {
             // Redirecionando após a remoção da Empresa
-            resp.sendRedirect("WEB-INF/view/" + tipoEndereco[1]);
+            resp.sendRedirect(tipoEndereco[1]);
         }
     }
 }

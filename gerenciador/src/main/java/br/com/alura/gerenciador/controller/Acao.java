@@ -1,4 +1,4 @@
-package br.com.alura.gerenciador.acoes;
+package br.com.alura.gerenciador.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

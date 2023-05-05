@@ -1,8 +1,6 @@
-package br.com.alura.gerenciador.acoes;
+package br.com.alura.gerenciador.controller;
 
 import br.com.alura.gerenciador.model.Banco;
-import br.com.alura.gerenciador.model.Empresa;
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -10,21 +8,17 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 // Encapsulando o código de listar as empresas
-public class MostrarEmpresa implements Acao {
+public class RemoverEmpresa implements Acao {
     public String executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("Mostrar Empresa");
+        System.out.println("Removendo empresa");
 
         String paramId = req.getParameter("id");
-        // Parsing
         Integer id = Integer.valueOf(paramId);
+        System.out.println(id);
 
         Banco banco = new Banco();
-        Empresa empresa = banco.buscarEmpresaPorId(id);
+        banco.removeEmpresa(id);
 
-        System.out.println(empresa.getNome());
-
-        req.setAttribute("empresa", empresa);
-
-        return "forward:formAlteraEmpresa.jsp";
+        return "redirect:entrada?acao=ListarEmpresas";
     }
 }

@@ -10,13 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5114f2fb-a1e8-466b-9cc3-868ec3b0c6d1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/Acao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/Acao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/AlterarEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/AlterarEmpresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/FormNovaEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/FormNovaEmpresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/ListarEmpresas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/ListarEmpresas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/MostrarEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/MostrarEmpresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/NovaEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/NovaEmpresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/RemoveEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/RemoverEmpresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/Acao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/Acao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/AlterarEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/AlterarEmpresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/FormNovaEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/FormNovaEmpresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/ListarEmpresas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/ListarEmpresas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/MostrarEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/MostrarEmpresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/NovaEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/NovaEmpresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/acoes/RemoverEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/RemoverEmpresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/model/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/model/Banco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/UnicaEntradaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/UnicaEntradaServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +32,8 @@
       <list>
         <option value="HTML File" />
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,7 +72,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/diego.dionisio/maven-war-plugin-3.3.2",
+    "last_opened_file_path": "C:/Users/diego.dionisio/AluraCursos/gerenciador/src/main/webapp/WEB-INF/view",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,6 +89,7 @@
       <recent name="br.com.alura.gerenciador" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\diego.dionisio\AluraCursos\gerenciador\src\main\webapp\WEB-INF\view" />
       <recent name="C:\Users\itzdi\AluraCursos\gerenciador\src\main\webapp" />
       <recent name="C:\Users\diego.dionisio\AluraCursos\gerenciador\src\main\webapp\WEB-INF\lib" />
     </key>

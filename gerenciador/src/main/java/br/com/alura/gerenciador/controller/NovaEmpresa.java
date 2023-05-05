@@ -1,4 +1,4 @@
-package br.com.alura.gerenciador.acoes;
+package br.com.alura.gerenciador.controller;
 
 import br.com.alura.gerenciador.model.Banco;
 import br.com.alura.gerenciador.model.Empresa;
