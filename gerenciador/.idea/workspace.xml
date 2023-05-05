@@ -12,13 +12,7 @@
     <list default="true" id="5114f2fb-a1e8-466b-9cc3-868ec3b0c6d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/ListarEmpresas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/ListarEmpresas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/controller/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/UnicaEntradaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/UnicaEntradaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/formAlteraEmpresa.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/formAlteraEmpresa.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/formNovaEmpresa.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/formNovaEmpresa.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/listarEmpresas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/listarEmpresas.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/novaEmpresaCriada.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/novaEmpresaCriada.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/MonitoriamentoFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/MonitoriamentoFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
