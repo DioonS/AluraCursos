@@ -9,7 +9,7 @@ import java.io.IOException;
 
 // Encapsulando o código de listar as empresas
 public class RemoveEmpresa {
-    public void executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public String executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Removendo empresa");
 
         String paramId = req.getParameter("id");
@@ -19,7 +19,6 @@ public class RemoveEmpresa {
         Banco banco = new Banco();
         banco.removeEmpresa(id);
 
-        // Redirecionando após a remoção da Empresa
-        resp.sendRedirect("entrada?acao=ListarEmpresas");
+        return "redirect:entrada?acao=ListarEmpresas";
     }
 }

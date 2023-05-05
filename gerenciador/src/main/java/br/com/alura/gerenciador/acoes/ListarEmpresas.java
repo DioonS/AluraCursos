@@ -12,7 +12,7 @@ import java.util.List;
 
 // Encapsulando o código de listar as empresas
 public class ListarEmpresas {
-    public void executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public String executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Listar empresas");
 
         Banco banco = new Banco();
@@ -20,7 +20,6 @@ public class ListarEmpresas {
 
         req.setAttribute("empresas", lista);
 
-        RequestDispatcher rd = req.getRequestDispatcher("/listarEmpresas.jsp");
-        rd.forward(req, resp);
+        return "forward:listarEmpresas.jsp";
     }
 }

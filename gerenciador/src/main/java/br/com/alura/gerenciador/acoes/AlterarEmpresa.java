@@ -13,7 +13,7 @@ import java.util.Date;
 
 // Encapsulando o código de listar as empresas
 public class AlterarEmpresa {
-    public void executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public String executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Alterar Empresa");
 
         String nomeEmpresa = req.getParameter("nome");
@@ -37,6 +37,6 @@ public class AlterarEmpresa {
         empresa.setNome(nomeEmpresa);
         empresa.setDataAbertura(dataAbertura);
 
-        resp.sendRedirect("entrada?acao=ListarEmpresas");
+        return "redirect:entrada?acao=ListarEmpresas";
     }
 }
