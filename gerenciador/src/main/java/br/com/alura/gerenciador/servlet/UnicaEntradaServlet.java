@@ -7,6 +7,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
@@ -17,6 +18,16 @@ public class UnicaEntradaServlet extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String paramAcao = req.getParameter("acao");
+
+        HttpSession sessao = req.getSession();
+
+        boolean usuarioNaoEstaLogado = (sessao.getAttribute("usuarioLogado") == null);
+        boolean acaoProtegida = !(paramAcao.equals("Login") || paramAcao.equals("LoginForm"));
+
+        if (acaoProtegida && usuarioNaoEstaLogado) {
+            resp.sendRedirect("entrada?acao=LoginForm");
+            return;
+        }
 
         String nomeDaClasse = "br.com.alura.gerenciador.controller." + paramAcao;
 

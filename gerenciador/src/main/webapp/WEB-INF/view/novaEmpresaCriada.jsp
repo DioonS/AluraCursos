@@ -8,6 +8,8 @@
     <title>Title</title>
 </head>
     <body>
+        <c:import url="logout-parcial.jsp"/>
+
         <c:if test="${ not empty empresa }">
             <!-- Usando Expression Language -->
             <p>Empresa  ${ empresa } cadastrada com Sucesso !</p>

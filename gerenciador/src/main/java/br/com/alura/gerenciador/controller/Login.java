@@ -5,6 +5,7 @@ import br.com.alura.gerenciador.model.Users;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
@@ -23,6 +24,11 @@ public class Login implements Acao{
 
         if (users != null) {
             System.out.println("Usuario Logado");
+
+            // Armazenando Cookies
+            HttpSession sessao = req.getSession();
+
+            sessao.setAttribute("usuarioLogado", users);
 
             return "redirect:entrada?acao=ListarEmpresas";
         } else {
