@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 // Encapsulando o código de listar as empresas
-public class NovaEmpresa {
+public class NovaEmpresa implements Acao {
     public String executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Cadastrando nova empresa");
 

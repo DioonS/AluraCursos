@@ -18,37 +18,18 @@ public class UnicaEntradaServlet extends HttpServlet {
 
         String paramAcao = req.getParameter("acao");
 
-        String nome = null;
+        String nomeDaClasse = "br.com.alura.gerenciador.acoes." + paramAcao;
 
-        if (paramAcao.equals("ListarEmpresas")) {
-
-            ListarEmpresas acao = new ListarEmpresas();
+        String nome;
+        // Carrega a classe com o nome requisitado
+        try {
+            Class classe = Class.forName(nomeDaClasse);
+            Acao acao = (Acao) classe.newInstance();
             nome = acao.executa(req, resp);
-
-        } else if (paramAcao.equals("RemoverEmpresa")) {
-
-            RemoveEmpresa acao = new RemoveEmpresa();
-            nome = acao.executa(req, resp);
-
-        } else if (paramAcao.equals("MostrarEmpresa")) {
-
-            MostrarEmpresa acao = new MostrarEmpresa();
-            nome = acao.executa(req, resp);
-        } else if (paramAcao.equals("AlterarEmpresa")) {
-
-            AlterarEmpresa acao = new AlterarEmpresa();
-            nome = acao.executa(req, resp);
-        } else if (paramAcao.equals("NovaEmpresa")) {
-
-            NovaEmpresa acao = new NovaEmpresa();
-            nome = acao.executa(req, resp);
-        } else if (paramAcao.equals("FormNovaEmpresa")) {
-
-            FormNovaEmpresa acao = new FormNovaEmpresa();
-            nome = acao.executa(req, resp);
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
+            throw new ServletException(e);
         }
 
-        // Split devolve um Array, separado por :
         String[] tipoEndereco = nome.split(":");
 
         if (tipoEndereco[0].equals("forward")) {

@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 // Encapsulando o código de listar as empresas
-public class RemoveEmpresa {
+public class RemoverEmpresa implements Acao {
     public String executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Removendo empresa");
 

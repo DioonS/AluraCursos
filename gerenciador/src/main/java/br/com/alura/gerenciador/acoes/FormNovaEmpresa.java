@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 // Encapsulando o código de listar as empresas
-public class FormNovaEmpresa {
+public class FormNovaEmpresa implements Acao {
     public String executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         return "forward:formNovaEmpresa.jsp";
