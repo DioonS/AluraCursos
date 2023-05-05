@@ -79,4 +79,13 @@ public class Banco {
         }
         return null;
     }
+
+    public Users existeUsuario(String login, String senha) {
+        for (Users usuario : listaUsers) {
+            if (usuario.referente(login, senha)) {
+                return usuario;
+            }
+        }
+        return null;
+    }
 }

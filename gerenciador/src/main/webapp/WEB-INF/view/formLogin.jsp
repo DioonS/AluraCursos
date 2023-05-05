@@ -12,7 +12,7 @@
 
         <p>Nome:</p><input type="text" name="login"/>
         <p>Senha:</p><input type="password" name="senha"/>
-        <input type="hidden" name="acao" value="login">
+        <input type="hidden" name="acao" value="Login">
 
         <input type="submit"/>
     </form>
