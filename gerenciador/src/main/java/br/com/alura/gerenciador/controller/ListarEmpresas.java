@@ -14,16 +14,12 @@ import java.util.List;
 public class ListarEmpresas implements Acao {
     public String executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
-
         System.out.println("Listar empresas");
 
         Banco banco = new Banco();
         List<Empresa> lista = banco.getEmpresas();
 
         req.setAttribute("empresas", lista);
-
-
 
         return "forward:listarEmpresas.jsp";
     }

@@ -1,33 +1,26 @@
 package br.com.alura.gerenciador.servlet;
 
-import br.com.alura.gerenciador.controller.*;
-import jakarta.servlet.RequestDispatcher;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
+import br.com.alura.gerenciador.controller.Acao;
+import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-@WebServlet(name = "entrada", value = "/entrada")
-public class UnicaEntradaServlet extends HttpServlet {
+//@WebFilter(urlPatterns = "/entrada")
+public class ControladorFilter implements Filter {
 
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
 
-        String paramAcao = req.getParameter("acao");
+        System.out.println("ControladorFilter");
 
-        HttpSession sessao = req.getSession();
+        // Casting
+        HttpServletRequest request = (HttpServletRequest) req;
+        HttpServletResponse response = (HttpServletResponse) resp;
 
-        boolean usuarioNaoEstaLogado = (sessao.getAttribute("usuarioLogado") == null);
-        boolean acaoProtegida = !(paramAcao.equals("Login") || paramAcao.equals("LoginForm"));
-
-        if (acaoProtegida && usuarioNaoEstaLogado) {
-            resp.sendRedirect("entrada?acao=LoginForm");
-            return;
-        }
+        String paramAcao = request.getParameter("acao");
 
         String nomeDaClasse = "br.com.alura.gerenciador.controller." + paramAcao;
 
@@ -36,7 +29,7 @@ public class UnicaEntradaServlet extends HttpServlet {
         try {
             Class classe = Class.forName(nomeDaClasse);
             Acao acao = (Acao) classe.newInstance();
-            nome = acao.executa(req, resp);
+            nome = acao.executa(request, response);
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
             throw new ServletException(e);
         }
@@ -48,7 +41,7 @@ public class UnicaEntradaServlet extends HttpServlet {
             rd.forward(req, resp);
         } else {
             // Redirecionando após a remoção da Empresa
-            resp.sendRedirect(tipoEndereco[1]);
+            response.sendRedirect(tipoEndereco[1]);
         }
     }
 }

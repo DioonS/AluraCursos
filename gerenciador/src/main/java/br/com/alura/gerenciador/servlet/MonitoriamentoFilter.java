@@ -5,12 +5,14 @@ import jakarta.servlet.annotation.WebFilter;
 
 import java.io.IOException;
 
-@WebFilter(urlPatterns = "/entrada")
+//@WebFilter(urlPatterns = "/entrada")
 public class MonitoriamentoFilter implements Filter {
 
 
     @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
+
+        System.out.println("MonitoramentoFilter");
 
         long antes = System.currentTimeMillis();
 
