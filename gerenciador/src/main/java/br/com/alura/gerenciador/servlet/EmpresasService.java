@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import com.google.code.gson;
+/*import com.google.code.gson;*/
 
 import java.io.IOException;
 import java.util.List;
@@ -20,10 +20,17 @@ public class EmpresasService extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Empresa> empresas = new Banco().getEmpresas();
 
-        Gson gson = new Gson();
+        XStream xStream = new XStream();
+        xStream.alias("empresa", Empresa.class);
+        String xml = xStream.toXML(empresas);
+
+        resp.setContentType("application/xml");
+        resp.getWriter().print(xml);
+
+        /*Gson gson = new Gson();
         String json = gson.toJson(empresas);
 
         resp.setContentType("application/json");
-        resp.getWriter().print(json);
+        resp.getWriter().print(json);*/
     }
 }
