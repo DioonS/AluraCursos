@@ -8,7 +8,6 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-//@WebFilter(urlPatterns = "/entrada")
 public class ControladorFilter implements Filter {
 
     @Override
