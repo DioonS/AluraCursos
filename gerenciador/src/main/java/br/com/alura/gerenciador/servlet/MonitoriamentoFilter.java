@@ -8,6 +8,10 @@ import java.io.IOException;
 public class MonitoriamentoFilter implements Filter {
 
     @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+    }
+
+    @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
 
         System.out.println("MonitoramentoFilter");
@@ -25,5 +29,7 @@ public class MonitoriamentoFilter implements Filter {
         System.out.println("Tempo antes: " + antes + " - Tempo depois: " + depois);
     }
 
-
+    @Override
+    public void destroy() {
+    }
 }

@@ -11,7 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5114f2fb-a1e8-466b-9cc3-868ec3b0c6d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/EmpresasService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/EmpresasService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/AutorizacaoFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/AutorizacaoFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/ControladorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/ControladorFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/MonitoriamentoFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/gerenciador/servlet/MonitoriamentoFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,13 +66,13 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/diego.dionisio/AluraCursos/gerenciador/src/main/webapp/WEB-INF/view",
+    "last_opened_file_path": "C:/Users/diego.dionisio/AluraCursos/api",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"

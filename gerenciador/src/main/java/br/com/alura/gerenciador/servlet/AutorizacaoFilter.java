@@ -11,6 +11,10 @@ import java.io.IOException;
 public class AutorizacaoFilter implements Filter {
 
     @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+    }
+
+    @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
 
         System.out.println("AutorizacaoFilter");
@@ -31,5 +35,9 @@ public class AutorizacaoFilter implements Filter {
         }
 
         chain.doFilter(req, resp);
+    }
+
+    @Override
+    public void destroy() {
     }
 }

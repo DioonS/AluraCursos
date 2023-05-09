@@ -11,6 +11,10 @@ import java.io.IOException;
 public class ControladorFilter implements Filter {
 
     @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+    }
+
+    @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
 
         System.out.println("ControladorFilter");
@@ -42,5 +46,9 @@ public class ControladorFilter implements Filter {
             // Redirecionando após a remoção da Empresa
             response.sendRedirect(tipoEndereco[1]);
         }
+    }
+
+    @Override
+    public void destroy() {
     }
 }
