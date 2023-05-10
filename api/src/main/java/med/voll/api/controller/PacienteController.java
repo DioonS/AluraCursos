@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("paciente")
+@RequestMapping("pacientes")
 public class PacienteController {
 
     @Autowired
@@ -34,5 +34,11 @@ public class PacienteController {
     public void atualizar(@RequestBody @Valid DadosAtualizacaoPaciente dados) {
         var paciente = repository.getReferenceById(dados.id());
         paciente.atualizarInformacoes(dados);
+    }
+
+    @DeleteMapping("/{id}")
+    @Transactional
+    public void excluir(@PathVariable Long id) {
+        repository.deleteById(id);
     }
 }
