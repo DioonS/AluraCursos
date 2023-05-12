@@ -11,10 +11,24 @@ import java.io.IOException;
 
 @Component // Utilizado para que o Spring carregue uma classe/componente genérico
 public class SecurityFilter extends OncePerRequestFilter {
+
+    // A classe doFilterInternal garante que o filtro será executado uma unica vez por request
     @Override
     protected void doFilterInternal(HttpServletRequest req, HttpServletResponse resp, FilterChain chain) throws ServletException, IOException {
-        // A classe doFilterInternal garante que o filtro será executado uma unica vez por request
+        var tokenJWT = recuperarToken(req);
+
+        System.out.println(tokenJWT);
 
         chain.doFilter(req, resp); // Chamar o proximo filtro !
+    }
+
+    // Devolve a String do Token
+    private String recuperarToken(HttpServletRequest req) {
+        var authorizationHeader = req.getHeader("Authorization");
+        if (authorizationHeader == null) {
+            throw new RuntimeException("Token JWT não informado no cabeçalho Authorization!");
+        }
+
+        return authorizationHeader.replace("Bearer ", ""); // Replace retira o prefixo do token
     }
 }
